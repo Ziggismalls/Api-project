@@ -1,0 +1,58 @@
+.body {
+  margin: 0;
+}
+.volCarte {
+  width: fit-content;
+  background-color: azure;
+  border-radius: 50px;
+  font-size: 15px;
+  color: black;
+  font-weight: bolder;
+  padding: 15px;
+}
+.volCarte:hover {
+  background-color: rgb(255, 253, 138);
+}
+
+.listeVols {
+  height: 600px;
+  overflow: scroll;
+  padding: 15px;
+  background-color: #2661a4;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.country {
+  letter-spacing: 0.2em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  width: 400px;
+  height: fit-content;
+  padding: 10px;
+  background-color: rgb(255, 253, 138);
+  font-weight: bold;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.elemCountry {
+  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+}
+
+.elemMunicipality {
+  font-size: 1em;
+  color: rgb(53, 53, 61);
+}
