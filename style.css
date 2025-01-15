@@ -1,50 +1,79 @@
-.body {
+:root {
+  --side: 253px;
+}
+body {
+  background-image: url("https://p4.wallpaperbetter.com/wallpaper/238/274/371/airport-the-plane-boeing-737-wallpaper-preview.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100uw;
+  height: 100vh;
   margin: 0;
 }
-.volCarte {
-  width: fit-content;
-  background-color: azure;
-  border-radius: 50px;
-  font-size: 15px;
-  color: black;
-  font-weight: bolder;
-  padding: 15px;
+.searchListeVols {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
-.volCarte:hover {
-  background-color: rgb(255, 253, 138);
+button {
+  background-image: url(assets/search.png);
+  background-size: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 2px solid #3d4349;
+  border-radius: 50px;
+  transition: all 0.2s ease;
+  width: 25px;
+  height: 28px;
+}
+button:active {
+  background-color: #00000000;
+  border: 2px solid #000000;
+  transform: translateY(2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.listeVols {
-  height: 600px;
-  overflow: scroll;
-  padding: 15px;
-  background-color: #2661a4;
-  border-radius: 10px;
+input {
+  background-color: rgb(220, 220, 220);
+  width: 250px;
+  height: 30px;
+}
+
+select {
+  background-color: rgb(220, 220, 220);
+  padding: 5px;
+  border: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
+  font-size: 25px;
 }
-
 .country {
   letter-spacing: 0.2em;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border-radius: 10px;
-  width: 400px;
+  width: fit-content;
   height: fit-content;
-  padding: 10px;
-  background-color: rgb(255, 253, 138);
+  padding: 20px;
+  background-color: rgb(220, 220, 220);
   font-weight: bold;
   text-align: center;
+}
+a {
+  letter-spacing: 0;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin-top: 50px;
 }
 
 .elemCountry {
@@ -55,4 +84,72 @@
 .elemMunicipality {
   font-size: 1em;
   color: rgb(53, 53, 61);
+}
+.styleInfoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc((var(--side) * 2));
+}
+
+.styleCity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  width: var(--side);
+  height: var(--side);
+  /* border-radius: 10px; */
+  color: white;
+  font-size: 30px;
+  background-color: rgba(105, 9, 9, 0.4);
+}
+
+.styleTemperature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: var(--side);
+  height: var(--side);
+  /* border-radius: 10px; */
+  color: white;
+  font-size: 30px;
+  background-color: rgba(25, 124, 30, 0.4);
+}
+
+.styleHumidité {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+  width: var(--side);
+  height: var(--side);
+  /* border-radius: 10px; */
+  color: white;
+  font-size: 30px;
+  background-color: rgba(33, 31, 158, 0.4);
+}
+
+.styleVent {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: var(--side);
+  height: var(--side);
+  /* border-radius: 10px; */
+  color: white;
+  font-size: 30px;
+  background-color: rgba(170, 214, 88, 0.4);
+}
+
+.styleVent img {
+  display: flex;
+  justify-self: center;
+  width: 50px;
 }
